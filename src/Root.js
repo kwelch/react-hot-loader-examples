@@ -4,9 +4,7 @@ import { Router, browserHistory } from 'react-router';
 export default class Root extends Component {
   render() {
     return (
-      <Router history={browserHistory}>
-        {this.props.routes()}
-      </Router>
+      <Router history={browserHistory} routes={this.props.routes} />
     );
   }
 }
